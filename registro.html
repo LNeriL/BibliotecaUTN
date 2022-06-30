@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosregistro.css">
+    <link rel="shortcut icon" href="images/LogoUTN.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a01a75bbd0.js" crossorigin="anonymous"></script>
+    <title>Registro Ingreso</title>
+</head>
+<body>
+    <section class="formulario-chat" id="service">
+
+        <form action="" method="POST">   <!--Vinculo con el archivo PHP para el envio en action-->
+            <h1>Registro de Ingreso</h1>
+            
+            <div class="grupo">
+                    <div class="select">
+                    <select name="format" id="format">
+                        <option selected disabled>Selecciona la Division</option>
+                        <option value="pdf">TI Infrestructura de Redes Digitales</option>
+                        <option value="txt">TI Desarrollo de Software Multiplataforma</option>
+                        <option value="epub">Mecatronica Area Sistemas de Manofactura Flexible</option>
+                        <option value="fb2">Administracion Area Capital Humano</option>
+                        <option value="mobi">Desarrollo de Negocios Area Mercadotecnia</option>
+                        <option value="mobi">Procesos Industriales Area Manofactura</option>
+                        <option value="mobi">Quimica Area Tecnologica Ambiental</option>
+                        <option value="mobi">Mantenimiento Aeronautico Area Avionica</option>
+                        <option value="mobi">TI Entornos Virtuales y Negocios Digitales</option>
+
+                    </select>
+                    </div>
+            </div>
+
+            <div class="grupo">
+                <input type="email" name="email" id="" required><span class="barra"></span>
+                <label>Matricula</label>
+            </div>
+
+            <div class="grupo">
+                <input type="date" name="email" id="" required><span class="barra"></span>
+                <label>Fecha</label>
+            </div>
+
+            <div class="grupo">
+                <textarea name="asunto" id="" rows="3" required></textarea><span class="barra"></span>
+                <label>Asunto</label>
+            </div>
+
+            <div class="botonoes-formulario">
+                <button type="submit" onclick="location.href='ventanaenviado.html';">Registrar<i class="fa-solid fa-qrcode"></i></button>
+                <button type="reset">Cancelar<i class="fa-solid fa-calendar-days"></i></button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
