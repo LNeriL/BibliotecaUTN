@@ -215,7 +215,7 @@ select::-ms-expand {
 @media screen and (max-width:650px) {
 
     .formulario-chat{
-        padding: 65px 50px 65px 30px;
+        padding: 50px 50px 50px 30px;
         overflow: hidden;
     }
 
