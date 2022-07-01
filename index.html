@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/LogoUTN.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a01a75bbd0.js" crossorigin="anonymous"></script>
+    <title>Biblioteca UTN</title>
+    <meta name="theme-color" content="#202020">
+</head>
+
+<body>
+    <header>
+        <nav class="contenedor">
+            <div class="logo">
+                <img src="images/LogoUTN.png" alt="">
+            </div>
+            <div class="enlaces">
+                <a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a>
+                <a href="#ingresos"><i class="fa-solid fa-qrcode"></i>Ingreso QR</a>
+                <a href="#cubiculos"><i class="fa-solid fa-person-shelter"></i>Cubiculos</a>
+                <a href="#galeria"><i class="fa-solid fa-image"></i>Galeria</a>
+                <a href="#horarios"><i class="fa-solid fa-calendar-days"></i>Horarios</a>
+                <a href="#sugerencias"><i class="fa-solid fa-circle-exclamation"></i>Sugerencias</a>
+                <a href="#contacto"><i class="fa-solid fa-user-tie"></i>Contacto</a>
+            </div>
+            <div class="hamburguesa">
+                <img src="images/menu-regular-24.png" id="hamburguesa">
+            </div>
+        </nav>
+    </header>
+
+    <div class="portada" id="inicio">
+    </div>
+
+    <div class="socialbar">
+        <a href="h" class="iconface" target="_blank"><img src="images/socialface.png" class="icosociales"></a>
+        <a href="https://api.whatsapp.com/send?phone=57169700&text=¡Hola!%20¿me%20podrian%20ayudar?" class="iconwatts" target="_blank"><img src="images/socialwatt.png" class="icosociales"></a>
+        <a href="mailto:biblioteca@utn.edu.mx" class="iconemail" target="_blank"><img src="images/socialemail.png" class="icosociales"></a>
+        
+    </div>
+
+
+    <main>
+        <section class="conoticias" id="ingresos">
+            <h1 class="titulo">Biblioteca de la Universidad Tecnológica de Nezahualcóyotl</h1>
+            
+            <div  class="contenedornoticiasextra">
+                <img src="images/entradaBiblioteca.jpeg" class="noticiasextraimg">
+
+                <div class="textosnoticiasextra">
+                    <h2>¡Visitanos! </h2>
+                    <p> 
+                        Puedes ingresar a la biblioteca cuando tu quieras, solo necesitas del codigo QR
+                        para tener acceso al espacio, da clic al boton y generalo ya.
+                    </p>
+
+                    <button class="botonnotiextra" id="cubiculos" href="registro.html">
+                        <a href="registro.html"><i class="fa-solid fa-qrcode"></i>Ingresar...</a>
+                    </button>
+
+                </div>
+            </div>
+
+            <div  class="contenedornoticiasmm">
+                <img src="images/CubiculoBiblioteca.jpeg" class="noticiasmmimg">
+                <div class="textosnoticiasmm">
+                    <h2>¿Necesitas Un Cubiculo?</h2>
+                    <p>Asi como puedes ingresar a la biblioteca tambien puedes reservbar un espacio para realizar
+                        tus actividades academicas con la mejor confortabilidad, revisa la disponibilidad.
+                    </p>
+
+                    <button class="botonnotimm">
+                        <a href="reservacubiculo.html"><i class="fa-solid fa-calendar-days"></i>Reservar...</a>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="eventos" id="galeria">
+            <div class="eventos-port">
+
+                <div class="textoevento">
+                    <h2>Lo que puedes encontrar en biblioteca</h2>
+                </div>
+
+                <div class="imagen-eve">
+                    <p><img src="images/LibrosBiblioteca.jpeg">Los Titulos Que Necesitas</p>
+                </div>
+
+                <div class="imagen-eve">
+                    <p><img src="images/MesasBiBIOTECA.jpeg">Espacios Comodos</p>
+                </div>
+
+                <div class="imagen-eve">
+                    <p><img src="images/ZonaLecturaBiblioteca.jpeg">Materiales</p>
+                </div>
+
+                <div class="imagen-eve">
+                    <p><img src="images/BañosBiblioteca.jpeg">Baños</p>
+                </div>
+
+                
+                <div class="imagen-eve">
+                    <p><img src="images/DireccionBiblioteca.jpeg">Recepcion</p>
+                </div>
+
+                <div class="imagen-eve">
+                    <p><img src="images/SistemaBibioteca.jpeg">Sistema</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="conubicacion" id="horarios">
+            <div class="conteubicacion">
+                <img src="images/EntradaBibliotecaDireccion.jpeg" class="ubimapa">
+                <div class="textosubi">
+                    <h2>Acercate Con Nosotros</h2>
+
+                    <div class="horariom">
+                        <ul class="conhora">
+                            <li><a>Horarios</a>
+                               <ul>
+                                   <li><a>Lunes 8:00 a 20:00</a></li>
+                                   <li><a>Martes 8:00 a 20:00</a></li>
+                                   <li><a>Miercoles 8:00 a 20:00</a></li>
+                                   <li><a>Jueves 8:00 a 20:00</a></li>
+                                   <li><a>Viernes 8:00 a 20:00</a></li>
+                                   <li><a>Sabado 8:00 a 13:00</a></li>
+                                   <li><a>Domingo Cerrado</a></li>
+                               </ul>
+                            </li>
+    
+                        </ul>
+                    </div>
+
+                    <p>Estamos ubicados en el edificio ------- justo a un lado del gimnasio, puedes encontranos 
+                        cualquera de nuestros dias de servicios y puedes hacer uso del espacio durante estos tiempos,
+                        la biblioteca de la Universidad Tecnológica de Nezahualcóyotl tiene mucho que ofrecerte.
+                    </p>
+                        
+                </div>
+            </div>
+    </section>
+
+
+        <section class="sugerencias" id="sugerencias">
+            <h2>Te Sugerimos: </h2>
+            <div class="sugerencias-cont">
+                <div class="sugerencias-ind">
+                    <img src="images/Cubrebocas.svg">
+                    <h3>Utiliza el cubrebocas dentro y fuera del espacio.</h3>
+                    
+                </div>
+                <div class="sugerencias-ind">
+                    <img src="images/Gel.svg">
+                    <h3>Tomar gel al ingresar y mantener la sana distancia.</h3>
+                </div>
+                <div class="sugerencias-ind">
+                    <img src="images/Casilleros.svg">
+                    <h3>Dejar tus pertenencias en los casilleros correspondientes.</h3>
+                </div>
+            </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="contenedor-footer" id="contacto">
+            <div class="content-foo">
+                <h4>WhatsApp<i class="fa-brands fa-whatsapp"></i></h4>
+                 <a href="https://api.whatsapp.com/send?phone=57169700&text=¡Hola!%20¿me%20podrian%20ayudar?" target="_blank">57-16-97-00 ext. 2046</a>
+            </div>
+            <div class="content-foo">
+                <h4>Facebook<i class="fa-brands fa-facebook"></i></h4>
+                <a href="https://www.facebook.com/OficialUTN" target="_blank">Universidad Tecnológica de Nezahualcóyotl </a>
+            </div>
+            <div class="content-foo">
+                <h4>Email<i class="fa-solid fa-at"></i></h4>
+                <a href="mailto:biblioteca@utn.edu.mx">biblioteca@utn.edu.mx</a>
+            </div>
+        </div>
+        <h2 class="titulo-final">® | Universidad Tecnológica de Nezahualcóyotl |</h2>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
