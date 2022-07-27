@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosregistro.css">
+    <link rel="shortcut icon" href="images/LogoUTN.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a01a75bbd0.js" crossorigin="anonymous"></script>
+    <title>Reservar Cubiculo</title>
+</head>
+<body>
+    <section class="formulario-chat" id="service">
+
+        <form action="conexionreserva.php" method="POST">   <!--Vinculo con el archivo PHP para el envio en action-->
+            <h1>Reserva de Cubiculo</h1>
+            
+            <div class="grupo">
+                <div class="select">
+                <select name="selectorDivisionn" id="format">
+                    <option selected disabled>Selecciona la Division</option>
+                    <option value="TI Infrestructura de Redes Digitales">TI Infrestructura de Redes Digitales</option>
+                    <option value="TI Desarrollo de Software Multiplataforma">TI Desarrollo de Software Multiplataforma</option>
+                    <option value="Mecatronica Area Sistemas de Manofactura Flexible">Mecatronica Area Sistemas de Manofactura Flexible</option>
+                    <option value="Administracion Area Capital Humano">Administracion Area Capital Humano</option>
+                    <option value="Desarrollo de Negocios Area Mercadotecnia">Desarrollo de Negocios Area Mercadotecnia</option>
+                    <option value="Procesos Industriales Area Manofactura">Procesos Industriales Area Manofactura</option>
+                    <option value="Quimica Area Tecnologica Ambiental">Quimica Area Tecnologica Ambiental</option>
+                    <option value="Mantenimiento Aeronautico Area Avionica">Mantenimiento Aeronautico Area Avionica</option>
+                    <option value="TI Entornos Virtuales y Negocios Digitales">TI Entornos Virtuales y Negocios Digitales</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="grupo">
+                <input type="text" name="matriculaa" id="" required><span class="barra"></span>
+                <label>Matricula</label>
+            </div>
+
+            <div class="grupo">
+                <input type="date" name="fechaDiaa" id="" required><span class="barra"></span>
+                <label>Fecha</label>
+            </div>
+
+            <div class="grupo">
+                <input type="time" name="horaEntrada" id="" required><span class="barra"></span>
+                <label>Hora de Entrada</label>
+            </div>
+
+            <div class="grupo">
+                <input type="time" name="horaSalida" id="" required><span class="barra"></span>
+                <label>Hora de Salida</label>
+            </div>
+
+            
+            <div class="grupo">
+                <div class="select">
+                <select name="selectorCubiculo" id="format">
+                    <option selected disabled>Selecciona el Cubiculo (solo los disponibles)</option>
+                    <option value="Cubiculo 01">Cubiculo 01</option>
+                    <option value="Cubiculo 02">Cubiculo 02</option>
+                    <option value="Cubiculo 03">Cubiculo 03</option>
+                    <option value="Cubiculo 04">Cubiculo 04</option>
+                    <option value="Cubiculo 05">Cubiculo 05</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="botonoes-formulario">
+                <button type="submit" onclick="location.href='secompleto.html';">Reservar<i class="fa-solid fa-calendar-check"></i></button>
+                <button type="reset">Cancelar<i class="fa-solid fa-calendar-xmark"></i></button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

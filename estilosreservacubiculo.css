@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Contenedor Formulario*/
+
+:root{
+    --colorTextos: #000000;  /*Poner lineas antes de la animacion*/
+}
+
+.formulario-chat{
+    background: #089c7c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3cff87, #089c7c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3cff87, #089c7c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    padding: 82px;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: #089c7c;
+}
+
+form{
+    background: #ffffff;
+    width: 40%;                       /*Cuerpo del formulario*/
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 350px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}    
+
+form .grupo{
+    position: relative;              /*organizacion de los recuadros*/
+    margin: 35px;
+}
+
+.grupo option{
+    background: #089c7c;
+    color: #ffffff;
+}
+
+.grupo p{
+    padding: 25px 10px 25px 10px;
+    font-size: 16px;
+}
+
+.grupo p:hover{
+    color: #089c7c;
+}
+
+.grupo select{
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;                 /*Estilo del recuadro*/
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;                        /*Solo poner una parte del recuadro de llenado de datos*/
+    color: rgb(146, 143, 143);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    position: absolute;
+    top: -14px;                     /*Hcer peqeuños los titulos de los recuadros*/
+    font-size: 12px;
+    color: #089c7c;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition:  0.4s ease all;       /*Titulos de los recuadros de texto*/
+    pointer-events: none;
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before{
+    width: 100%;
+}
+
+.barra{
+    position: relative;      /*Barra de abajo de los recuadros*/
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #089c7c, hsla(0, 0%, 100%, 0.719)); /*Cambio al hacer de la barra*/
+    transition:  0.4s ease all;
+    left: 0%;
+}
+
+button .regresar{
+    color: #000000;
+    text-decoration: none;      /*Boton regresar por que es un a y se uanta por aparte de los otros*/
+    align-items: center;
+    display: contents;
+}
+
+button .regresar:hover{
+    color: #ffffff;         /*Cambio de el boton regresar*/
+    background: #089c7c;
+}
+
+button{
+    background: #ffffff;
+    padding: 10px 50px;
+    align-items: center;
+    border: none;
+    color: black;                /*Botones de enviar y borrar*/
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px 15px 30px 15px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer; 
+    text-align: center;
+}
+
+button:hover{
+    background: #089c7c;        /*Cambio de botones*/
+    color: #ffffff;
+}
+
+button i{
+    margin: 10px;
+}
+
+/*Seleccion*/
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #089c7c;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#000000;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.select:hover{
+    color: #089c7c;
+}
+
+select::-ms-expand {
+    display: none;
+}
+ 
+.select {
+    position: relative;
+    display: flex;
+    width: 24em;
+    height: 3em;
+    line-height: 3;
+    background: #089c7c;
+    overflow: hidden;
+    border-radius: .25em;
+}
+ 
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #089c7c;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+}
+ 
+.select:hover::after {
+    color: #089c7c;
+}
+
+
+@media screen and (max-width:650px) {
+
+    .formulario-chat{
+        padding: 50px 50px 50px 30px;
+        overflow: hidden;
+    }
+
+    h1{
+        padding: 20px 0px 0px 0px;
+    }
+    
+    form{
+        width: 110%;                       /*Cuerpo del formulario*/
+        padding: 0px;
+        margin: 0px 0px;
+    }    
+    
+    
+    .grupo p{
+        padding: 0px 10px 0px 10px;
+        font-size: 16px;
+    }
+    
+    .grupo p:hover{
+        color: #089c7c;
+    }
+    
+    .grupo select{
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+    
+    .barra::before{
+        content: '';
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(to right, #089c7c, hsla(0, 0%, 100%, 0.719)); /*Cambio al hacer de la barra*/
+        transition:  0.4s ease all;
+        left: 0%;
+    }
+    
+    button .regresar{
+        color: #000000;
+        text-decoration: none;      /*Boton regresar por que es un a y se uanta por aparte de los otros*/
+        align-items: center;
+        display: contents;
+    }
+    
+    button .regresar:hover{
+        color: #ffffff;         /*Cambio de el boton regresar*/
+        background: #089c7c;
+    }
+    
+    button{
+        padding: 4px 12px;
+        font-size: 14px;
+        margin: 10px 10px 30px 22px;
+    }
+    
+    button:hover{
+        background: #089c7c;        /*Cambio de botones*/
+        color: #ffffff;
+    }
+    
+    button i{
+        margin: 10px;
+    }
+    
+    /*Seleccion*/
+    
+    select {
+        font-size: 10px;
+    }
+     
+    .select {
+        width: 15em;
+
+    }
+
+}

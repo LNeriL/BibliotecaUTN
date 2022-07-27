@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos formulario*/
+
+form{
+    background: #089c7c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3cff87, #089c7c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3cff87, #089c7c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    width: 100%;                       /*Cuerpo del formulario*/
+    height: 625px;
+    padding: 100px 150px 60px 150px;
+    margin: auto;
+    box-shadow: 2px 2px 6px 2px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+} 
+
+.enviado h2{
+    text-align: center;
+    padding: 132px 0px 50px 0px;
+    cursor: pointer;
+}
+
+.enviado i{
+    margin: 8px;
+}
+
+/*Boton de regreso*/
+
+.textosnoticiasextra .botonnotiextra{
+    margin: 10px 100px 80px 370px;
+}
+
+.botonnotiextra{
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    background: #089c7c; 
+    font-size: 20px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    border: 2px;
+    cursor: pointer;
+    margin: 0px 0px 100px 0px;
+}
+
+.botonnotiextra:hover{
+    width: 350px;
+    background: #000000;
+    box-shadow: 0 0 10px #0000, 0 0 10px, #000000 0 0 10px;
+}
+
+.botonnotiextra i{
+    padding: 5px;
+}
+
+.textosnoticiasextra a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width:650px){
+    form{
+        height: 900px;
+        padding: 100px 10px 50px 10px;
+    } 
+
+    .textosnoticiasextra .botonnotiextra{
+        width: 250px;
+        margin: 10px 10px 10px 30px;
+    }
+
+    .botonnotiextra:hover{
+        width: 300px;
+    }
+}
